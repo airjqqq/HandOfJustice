@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>ReactJS + Spring Data REST</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"/>
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css"/>-->
+
+    <link rel="stylesheet" href="/libs/util.css"/>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>登录角色</h1>
+    <div class="form-group form-group-lg">
+        <label class="control-label" for="name">角色名称</label>
+        <input type="text" class="form-control" id="name"/>
+    </div>
+    <div class="form-group form-group-lg">
+        <button type="button" class="btn btn-primary btn-lg btn-block">查询</button>
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="ItemLevel">装备等级</label>
+        <input type="tel" class="form-control" id="ItemLevel"/>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" for="class">职业</label>
+        <input class="form-control" type="text" id="class" readonly=""/>
+    </div>
+
+    <label class="control-label">职责</label>
+    <div class="row form-group">
+        <div class="col-xs-3">
+            <label class="checkbox-inline">
+                <input type="checkbox" id="tank" value="option1"/> 坦克
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <label class="checkbox-inline">
+                <input type="checkbox" id="healer" value="option1"/> 治疗
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <label class="checkbox-inline">
+                <input type="checkbox" id="range" value="option1"/> 远程
+            </label>
+        </div>
+        <div class="col-xs-3">
+            <label class="checkbox-inline">
+                <input type="checkbox" id="melee" value="option1"/> 近战
+            </label>
+        </div>
+    </div>
+    <div class="form-group form-group-lg">
+        <button type="button" class="btn btn-default btn-lg btn-block">绑定</button>
+    </div>
+</div>
+<script src="/libs/util.js"></script>
+
+</body>
+</html>
